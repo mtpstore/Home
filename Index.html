@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>15 Anos de Júlia Gabrielly ✨</title>
+
+<meta property="og:title" content="15 Anos de Júlia Gabrielly ✨">
+<meta property="og:description" content="Você está convidado para celebrar esta noite inesquecível 💛">
+<meta property="og:image" content="https://res.cloudinary.com/daqguurar/image/upload/v1773375330/qhuo6gwpebfkju9itd9r.png">
+<meta property="og:type" content="website">
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html, body{
+    width:100%;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Great Vibes', cursive;
+    color:#f5d77a;
+    min-height:100vh;
+}
+
+/* FUNDO FIXO */
+.bg{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    background:
+        linear-gradient(135deg, rgba(0,0,0,0.75), rgba(0,0,0,0.45)),
+        url("https://res.cloudinary.com/daqguurar/image/upload/v1771453600/profiles/dxakzs9edsueezuuvlty.webp");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+/* NOME */
+.nome{
+    font-size:58px;
+    text-align:center;
+    margin-top:70px;
+    color:#C9A227; /* dourado escuro */
+    text-shadow:0 0 10px #C9A227, 0 0 25px rgba(201,162,39,0.6);
+}
+
+/* TEXTOS */
+h2{
+    font-family:"Times New Roman", serif;
+    text-align:center;
+    font-size:15px;
+}
+
+h3{
+    font-family:"Times New Roman", serif;
+    text-align:center;
+    font-size:20px;
+}
+
+/* SETA */
+.scroll-arrow{
+    position:fixed;
+    bottom:25px;
+    left:50%;
+    transform:translateX(-50%);
+    width:55px;
+    height:55px;
+    z-index:9999;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:radial-gradient(circle, rgba(201,162,39,0.9), rgba(201,162,39,0.3));
+    box-shadow:0 0 20px #C9A227;
+    animation:floatY 2s infinite ease-in-out;
+}
+
+.scroll-arrow.hide{
+    opacity:0;
+    pointer-events:none;
+}
+
+@keyframes floatY{
+    0%{transform:translateX(-50%)}
+    50%{transform:translateX(-50%) translateY(10px)}
+    100%{transform:translateX(-50%)}
+}
+
+.scroll-arrow svg{
+    width:26px;
+    stroke:#000;
+    stroke-width:3;
+}
+
+/* CARDS */
+.card{
+    background:rgba(10,20,60,0.9);
+    border:1px solid rgba(201,162,39,0.4);
+    padding:25px;
+    border-radius:20px;
+    margin:28px auto;
+    width:90%;
+    max-width:520px;
+    box-shadow:0 0 18px rgba(201,162,39,0.2);
+    transform:translateY(20px);
+    opacity:0;
+    transition:0.4s ease;
+}
+
+.card.show{
+    transform:translateY(0);
+    opacity:1;
+}
+
+iframe{
+    width:100%;
+    height:250px;
+    border:none;
+    border-radius:15px;
+    margin-top:15px;
+}
+
+button{
+    padding:12px 28px;
+    border:none;
+    border-radius:40px;
+    background:linear-gradient(90deg,#C9A227,#E6C76E,#C9A227);
+    font-family:"Times New Roman", serif;
+    font-size:20px;
+    cursor:pointer;
+    display:block;
+    margin:20px auto;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+p{
+    font-family:"Times New Roman", serif;
+    color:#fff6cc;
+    font-size:16px;
+    text-align:center;
+}
+
+.endereco,.pix-info{
+    font-family:"Times New Roman", serif;
+    font-size:16px;
+    color:#ffffff;
+    text-align:center;
+}
+
+/* POPUP */
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.75);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:99999;
+}
+
+.popup{
+    background:rgba(10,20,60,0.95);
+    border:2px solid #C9A227;
+    padding:25px;
+    border-radius:20px;
+    width:90%;
+    max-width:420px;
+    text-align:center;
+    box-shadow:0 0 30px #C9A227;
+}
+
+.popup p{
+    color:#fff;
+}
+
+.checkbox-list{
+    text-align:left;
+    margin-top:15px;
+    font-family:"Times New Roman", serif;
+    font-size:18px; /* maior fonte */
+}
+
+.checkbox-list label{
+    display:block;
+    margin-bottom:10px;
+    cursor:pointer;
+    color:#fff; /* nome branco */
+}
+
+.popup-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:15px;
+}
+
+/* AVISO DE PRAZO */
+.aviso-prazo{
+    text-align:center;
+    font-size:16px;
+    color:#FFD700;
+    margin-bottom:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<h2>✨ Você está convidado para comemorar conosco✨</h2>
+<div class="nome">Júlia Gabrielly</div>
+
+<div class="card show">
+<h2>💌 Convite Especial</h2>
+<p style="font-size:18px;">
+Com todo carinho e consideração,<br><br>
+Convido especialmente:<br><br>
+<strong style="font-size:20px; color:#C9A227;">
+Priscila </strong>
+<br><br>
+Para celebrar este momento inesquecível ✨💛
+</p>
+</div>
+
+<div class="scroll-arrow" id="arrow" onclick="scrollDown()">
+<svg viewBox="0 0 24 24">
+<path d="M6 9l6 6 6-6"/>
+</svg>
+</div>
+
+<div class="card">
+<h3>💎 Celebração de 15 Anos</h3>
+<h3>📅 04 de Julho de 2026</h3>
+<h3>⏰ Às 18h</h3>
+</div>
+
+<div class="card">
+<h2>📍 Local do Buffet</h2>
+<div class="endereco">
+Rua José Dias de Castro, 481<br>
+Várzea Paulista - SP
+</div>
+
+<iframe src="https://www.google.com/maps?q=Rua+José+Dias+de+Castro+481,+Várzea+Paulista,+SP&output=embed"></iframe>
+
+<button onclick="window.open('https://www.google.com/maps/search/?api=1&query=Rua+José+Dias+de+Castro+481,+Várzea+Paulista,+SP')">
+Abrir no Google Maps
+</button>
+</div>
+
+<div class="card">
+<h2>🎁 Sugestão de Presente</h2>
+<p>
+Sua presença é o maior presente.<br>
+Mas, se desejar contribuir, qualquer gesto será recebido com amor e gratidão.
+</p>
+
+<div class="pix-info">
+💳 Pix: 11942254660<br>
+Banco: Nubank<br>
+Nome: Júlia Gabrielly
+</div>
+</div>
+
+<div class="card">
+<!-- AVISO DO PRAZO -->
+<p class="aviso-prazo">⚠️ Favor confirmar presença até 04/05/2026</p>
+<button onclick="confirmar()">Confirme sua Presença</button>
+</div>
+
+<div class="overlay" id="overlay">
+<div class="popup">
+<!-- AVISO DO PRAZO NO POPUP -->
+<p class="aviso-prazo">⚠️ Favor confirmar presença até 04/05/2026</p>
+<p>Selecione quem irá comparecer:</p>
+<div id="listaConvidados" class="checkbox-list"></div>
+<div class="popup-buttons">
+<button onclick="confirmarPresenca()">Confirmar</button>
+<button onclick="fecharPopup()">Voltar</button>
+</div>
+</div>
+</div>
+
+<script>
+const convidados = ["Priscila"];
+const data = "04 de Julho de 2026";
+const hora = "18h";
+
+const cards = document.querySelectorAll('.card');
+const arrow = document.getElementById('arrow');
+
+function reveal(){
+  cards.forEach(card=>{
+    if(card.getBoundingClientRect().top < window.innerHeight - 60){
+      card.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener('scroll', ()=>{
+  reveal();
+  arrow.classList.toggle('hide', window.scrollY > 120);
+});
+
+window.addEventListener('load', reveal);
+
+function scrollDown(){
+  window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+}
+
+function confirmar(){
+  const lista = document.getElementById("listaConvidados");
+  lista.innerHTML = "";
+
+  convidados.forEach(nome=>{
+    lista.innerHTML += `
+      <label>
+        <input type="checkbox" value="${nome}" checked>
+        ${nome}
+      </label>
+    `;
+  });
+
+  document.getElementById("overlay").style.display="flex";
+}
+
+function fecharPopup(){
+  document.getElementById("overlay").style.display="none";
+}
+
+function confirmarPresenca(){
+
+  const selecionados = Array.from(
+    document.querySelectorAll("#listaConvidados input:checked")
+  ).map(input => input.value);
+
+  if(selecionados.length === 0){
+    alert("Selecione pelo menos um convidado.");
+    return;
+  }
+
+  let mensagem = "✨ Confirmação de Presença ✨\n\n";
+
+  if(selecionados.length === 1){
+    mensagem += `Confirmamos a presença de ${selecionados[0]} na celebração dos 15 anos de Júlia Gabrielly.\n\nDia ${data} às ${hora} 💛`;
+  } else {
+    const nomesFormatados = selecionados.slice(0, -1).join(", ") + " e " + selecionados.slice(-1);
+    mensagem += `Confirmamos a presença de ${nomesFormatados} na celebração dos 15 anos de Júlia Gabrielly.\n\nDia ${data} às ${hora} 💛`;
+  }
+
+  window.open("https://wa.me/5511971397203?text=" + encodeURIComponent(mensagem));
+}
+</script>
+
+</body>
+  </html>
